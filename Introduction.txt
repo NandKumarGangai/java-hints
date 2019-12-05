@@ -1,1 +1,62 @@
+Introduction:
+	JDK: Java Development Kit(Java SDK)
+    -Java programs normally go through five phases—edit, compile, load, verify and execute.
+    -The Java compiler translates Java source code into bytecodes that represent the tasks
+        to execute in the execution phase. Bytecodes are executed by the Java Virtual
+        Machine (JVM)—a part of the JDK and the foundation of the Java platform.
+    -JVM places the program in memory to execute it—this is known as loading.
+    -.The JVM’s class loader takes the .class files containing the program’s bytecodes and transfers them to primary memory.
+    -classes are loaded, the bytecode verifier examines their bytecodes to ensure that they’re 
+        valid and do not violate Java’s security restrictions.
+    -JVM executes the program’s bytecodes.
 
+A Simple Java Program:
+    Refer 1_simple_demo
+
+Source File Declaration Rules:
+    1. PascalCase - Class Declaration
+    2. camelCase - object and variable Declaration
+    3. Java is case sensitive
+    4. The keyword public is called an access modifier
+
+Comments: 
+    // Single line comment
+    /*
+        Multi line comment
+    */
+
+Data Types: 
+    Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+    Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+
+    1. Interger Types: 
+    2. Floating-Point Types: double salary;
+    3. The char Type
+    4. The boolean Type: boolean done;
+
+Variables:
+    1. After you declare a variable, you must explicitly initialize it by means of an assignment statement—
+        you can never use the value of an uninitialized variable.
+        Error: Main method not found in class EvenNumber, please define the main method as:
+        public static void main(String[] args)
+        or a JavaFX application class must extend javafx.application.Application
+    2. Constants:
+        final double CM_PER_INCH = 2.54;
+        The keyword final indicates that you can assign to the variable once, and then its value is set once and for all.
+    
+    3. public static final double CM_PER_INCH = 2.54;
+        It is available for all class methods.
+    
+    4. Types of Variables
+        a. Local: A variable declared inside the body of the method is called local variable.
+        b. Instance Variable: A variable declared inside the class but outside the body of the method, is called instance variable.
+        c. Static variable: A variable which is declared as static is called static variable.
+            It cannot be local. You can create a single copy of static variable and share among all the instances of the class.
+    5. You can assign int value to float but vice versa is not possible diectly. Need to use narrowing.
+
+Strings:
+    - Java strings are sequences of Unicode characters.
+    - Each quoted string is an instance of the String class.
+    - The String class gives no methods that let you change a character in an existing string.
+        If you want to turn greeting into "Help!", you cannot directly change the last positions of greeting into 'p' and '!'.
+    - The compiler can arrange that strings are shared.
