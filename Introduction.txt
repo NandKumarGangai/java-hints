@@ -45,7 +45,7 @@ Variables:
         The keyword final indicates that you can assign to the variable once, and then its value is set once and for all.
     
     3. public static final double CM_PER_INCH = 2.54;
-        It is available for all class methods.
+        It is available for all: class methods.
     
     4. Types of Variables
         a. Local: A variable declared inside the body of the method is called local variable.
@@ -60,3 +60,34 @@ Strings:
     - The String class gives no methods that let you change a character in an existing string.
         If you want to turn greeting into "Help!", you cannot directly change the last positions of greeting into 'p' and '!'.
     - The compiler can arrange that strings are shared.
+
+Input and Output:
+    - • Scanner(InputStream in)
+    - • String nextLine()
+    - • String next()
+    - • int nextInt()
+    - • double nextDouble()
+    - • boolean hasNext()
+    - • boolean hasNextInt()
+    - • boolean hasNextDouble()
+
+Control Flow:
+    - Block Scope
+    - Conditional Statements
+    - Loops
+    - The switch Statement
+    - Break
+
+Big Numbers:
+    - If the precision of the basic integer and floating-point types is not sufficient, you can turn to a
+        couple of handy classes in the java.math package: BigInteger and BigDecimal.
+    - The BigInteger class implements arbitrary-precision integer arithmetic, and BigDecimal does the same for floating-point numbers.
+    - Use the static valueOf method to turn an ordinary number into a big number. 
+    - BigInteger a = BigInteger.valueOf(100);
+    - BigInteger c = a.add(b); // c = a + b
+        BigInteger d = c.multiply(b.add(BigInteger.valueOf(2))); // d = c * (b + 2)
+
+Arrays:
+    - An array is a data structure that stores a collection of values of the same type.
+    - int[] a = new int[100]; or int a[] = new int[100];
+
