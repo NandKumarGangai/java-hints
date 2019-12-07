@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class Constant {
 	// public static final float CM_PER_INCH = 2.54f;
 
@@ -12,6 +13,8 @@ class Constant {
 		demo.printConstant4();
 		
 		demo.compareStrings();
+		
+		demo.readingInputs();
 	};
 }
 
@@ -57,6 +60,20 @@ class Demo {
 		
 		if(str1.equals(str3)) System.out.println("str1 & str3 are equal, tested using equals operator.");
 		else System.out.println("str1 & str3 are not equal, tested using equals operator.");
+		System.out.println("**********************************************************");
+	}
+	
+	void readingInputs() {
+		System.out.println("*********************readingInputs***********************");
+		int num1;
+		float num2;
+		String str = "";
+		boolean num3;
+		
+		Scanner in = new Scanner(System.in); // Scanner class is used for input a console stream. It takes `System.in` as a constructor parameter.
+		System.out.print("Enter a string: " + str);
+		str = in.nextLine();
+		System.out.println("Entered string is: " + str);
 		System.out.println("**********************************************************");
 	}
 }
