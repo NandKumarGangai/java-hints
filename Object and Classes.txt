@@ -1,0 +1,116 @@
+Object and Classes:
+    - Class
+        - A class is the template or blueprint from which objects are made.
+        - When you construct an object from a class, you are said to have created an instance of the class.
+        - Encapsulation
+            - Encapsulation (sometimes called information hiding) is a key concept in working with objects.
+            - encapsulation is simply combining data and behavior in one package and hiding the implementation details from the users of the object.
+    - Objects
+        - All objects that are instances of the same class share a family resemblance by supporting the same behavior.  
+            The behavior of an object is defined by the methods that you can call.
+        - each object stores information about what it currently looks like
+    
+OOP concepts:
+    - Inheritance:
+       - When one object acquires all the properties and behaviors of a parent object, it is known as inheritance.
+            It provides code reusability. It is used to achieve runtime polymorphism.
+    - Polymorphism:
+        - If one task is performed in different ways, it is known as polymorphism.
+    - Abstraction:
+        - Hiding internal details and showing functionality is known as abstraction.
+    - Encapsulation:
+        - Binding (or wrapping) code and data together into a single unit are known as encapsulation.
+    - Aggregation:
+        - Aggregation is a way to achieve Association. Aggregation represents the relationship where one object contains other objects as a part of its state. 
+            It represents the weak relationship between objects.
+    - Composition:
+        - The composition is also a way to achieve Association. 
+            The composition represents the relationship where one object contains other objects as a part of its state. 
+            There is a strong relationship between the containing object and the dependent object.
+
+Declaring Classes:
+
+    class <class_name>{  
+        field;  
+        method;  
+    }
+
+Ways to initialize object
+    - The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.
+    - Initialization through reference:
+
+Constructors in Java:
+    - Constructor name must be the same as its class name
+    - A Constructor must have no explicit return type
+    - A Java constructor cannot be abstract, static, final, and synchronized
+    - Types of constructors:
+        - Default constructor (no-arg constructor)
+        - Parameterized constructor
+
+Inheritance: 
+    - Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object.
+    - Subclass is a class which inherits the other class. It is also called a derived class, extended class, or child class.
+    - Superclass is the class from where a subclass inherits the features. It is also called a base class or a parent class.
+    - The extends keyword indicates that you are making a new class that derives from an existing class. 
+        The meaning of "extends" is to increase the functionality.
+    - Single Inheritance
+    - Multiple Inheritance (Not Supported in Java)
+    - Multilevel Inheritance
+
+Polymorphism:
+    - https://www.javatpoint.com/method-overloading-in-java
+    - https://www.javatpoint.com/method-overriding-in-java
+    - https://www.javatpoint.com/runtime-polymorphism-in-java
+    - A method is overridden, not the data members, so runtime polymorphism can't be achieved by data members.
+
+Instance initializer block:
+    - Instance Initializer block is used to initialize the instance data member. It run each time when object of the class is created.
+
+Final Class and methods:
+    - Classes that cannot be extended are called final classes, 
+        and you use the final modifier in the definition of the class to indicate this.
+    - You can also make a specific method in a class final. If you do this, then no subclass can override that method.
+    - All methods in a final class are automatically final.
+
+Abstract class and Methods:
+    - Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+    - An abstract class must be declared with an abstract keyword.
+    - It can have abstract and non-abstract methods.
+    - It cannot be instantiated.
+    - It can have constructors and static methods also.
+    - It can have final methods which will force the subclass not to change the body of the method.
+    - Abstract Method:
+        A method which is declared as abstract and does not have implementation is known as an abstract method.
+
+Nested class and Inner class:
+    - Java inner class or nested class is a class which is declared inside the class or interface.
+    - It can access all the members of outer class including private data members and methods.
+    - Member inner class:
+        - A non-static class that is created inside a class but outside a method is called member inner class.
+    - Anonymous inner class:
+        - A class that have no name is known as anonymous inner class in java. 
+        - It should be used if you have to override method of class or interface.
+    - Local inner class: 
+        - A class i.e. created inside a method is called local inner class in java.
+    - static nested class:
+        - A static class i.e. created inside a class is called static nested class in java. 
+        - It cannot access non-static data members and methods. 
+        - It can be accessed by outer class name.
+        - It can access static data members of outer class including private.
+    
+interfaces:
+    - An interface in java is a blueprint of a class. It has static constants and abstract methods.
+    - The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body.
+    - It is used to achieve abstraction and multiple inheritance in Java.
+    - It cannot be instantiated just like the abstract class.
+    - Since Java 8, we can have default and static methods in an interface.
+    - Since Java 9, we can have private methods in an interface.
+
+Package: 
+    - Class importing 
+    - Creating a Package: javac -d <src> <dest>
+    - Naming a Package
+    - Using Package members
+    - Managing source and class File
+    - Developing and deploying JAR File : jar cvf calculation.jar *.class
+

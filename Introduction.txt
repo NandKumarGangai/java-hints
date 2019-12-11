@@ -87,6 +87,8 @@ Big Numbers:
     - BigInteger c = a.add(b); // c = a + b
         BigInteger d = c.multiply(b.add(BigInteger.valueOf(2))); // d = c * (b + 2)
 
+Control structure:
+    - If-else, switch, for loop, while loop, do while loop, Break, Continue, Comments
 Arrays:
     - An array is a data structure that stores a collection of values of the same type.
     - int[] a = new int[100]; or int a[] = new int[100];
